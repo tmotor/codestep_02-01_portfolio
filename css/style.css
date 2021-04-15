@@ -1,0 +1,236 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@charset "utf-8";
+
+/* ========================================
+Foundation
+======================================== */
+:root {
+  --border-color: (#c8c8c8);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4em;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========================================
+Layout
+======================================== */
+.l-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 30px 4% 12px;
+  max-width: 960px;
+}
+.l-section {
+  margin: auto;
+  padding: 80px 4% 0;
+  max-width: 960px;
+}
+.l-section--padding-b {
+  padding-bottom: 190px;
+}
+.l-footer {
+  padding: 10px 0;
+  background-color: #24292e;
+}
+
+/* PC
+======================================== */
+@media screen and (min-width: 600px) {
+  .l-header {
+    padding: 120px 4%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/* ========================================
+Object/Component
+======================================== */
+.c-logo {
+  width: 120px;
+}
+.c-insta-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.c-main-img {
+  display: block;
+  height: 420px;
+  background: url(../images/mainvisual-sp.jpg) no-repeat center/cover;
+}
+.c-section-title {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.c-input-text {
+  display: block;
+  width: 100%;
+  height: 43px;
+  border: 1px solid #c8c8c8;
+}
+.c-textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #c8c8c8;
+}
+.c-submit-btn {
+  display: block;
+  width: 200px;
+  height: 53px;
+  border: none;
+  background-color: #24292E;
+  color: #fff;
+}
+.c-copyright {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ========================================
+Object/Project
+======================================== */
+.p-header-navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+.p-header-navi__item:not(:last-child) {
+  margin-right: 20px;
+}
+.p-about__text {
+  margin-bottom: 30px;
+}
+.p-works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.p-works__item {
+  display: block;
+  width: 100%;
+}
+.p-works__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+.p-news__list-row {
+  padding: 11px;
+  border-top: 1px solid #c8c8c8;
+}
+.p-news__list-row--last {
+  border-bottom: 1px solid #c8c8c8;
+}
+.p-form__label {
+  display: block;
+}
+.p-form__label:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* PC
+======================================== */
+@media screen and (min-width: 600px) {
+  .p-works {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .p-works__item {
+    margin-bottom: 23px;
+    width: 31.5%;
+  }
+  .p-news__list-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .p-news__list-item:nth-child(odd) {
+    margin-right: 84px;
+  }
+  .p-form__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .p-form .c-input-text,
+  .p-form .c-textarea {
+    width: 80%;
+  }
+}
+/* ========================================
+Object/Utility
+======================================== */
+.u-clearfix {
+  display: block;
+  clear: both;
+  content: "";
+}
+.u-block {
+  display: block;
+}
+.u-margin-w-a {
+  margin-right: auto;
+  margin-left: auto;
+}
+.u-margin-b-xsmall {
+  margin-bottom: 10px;
+}
+.u-margin-b-small {
+  margin-bottom: 30px;
+}
